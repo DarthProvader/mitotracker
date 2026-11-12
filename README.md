@@ -31,6 +31,9 @@ has had and whether that stays within the manufacturer's own daily limits.
   used, tested and demonstrated without a device in the room.
 - English and Czech.
 
+**Prototype status:** the switches on the Settings screen, including the Health Connect option, are
+placeholders and do nothing yet.
+
 ## How it is built
 
 Kotlin, Jetpack Compose and [Kable](https://github.com/JuulLabs/kable) for BLE. The code is split into
