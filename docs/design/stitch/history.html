@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>History - Mito Tracker</title>
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700&amp;family=Poppins:wght@400;500;600&amp;family=Roboto+Mono:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "error": "#FF5A6E",
+                      "error-container": "#93000a",
+                      "on-surface": "#F2F2F2",
+                      "channel-red": "#EF202C",
+                      "primary": "#ffb3b1",
+                      "surface-high": "#3D3D3D",
+                      "outline-variant": "#5e3f3e",
+                      "secondary-fixed-dim": "#ffb3ad",
+                      "on-secondary-fixed": "#410003",
+                      "on-primary-fixed": "#410007",
+                      "surface-container-high": "#3a2424",
+                      "tertiary-fixed": "#8ef2ff",
+                      "channel-nir": "#7A5AF8",
+                      "secondary": "#ffb3ad",
+                      "channel-nir-bright": "#A98BFF",
+                      "tertiary-container": "#319eab",
+                      "tertiary": "#71d5e2",
+                      "on-tertiary": "#00363c",
+                      "heat-over": "#F50537",
+                      "primary-container": "#ff535a",
+                      "on-error": "#690005",
+                      "background": "#141414",
+                      "surface-bright": "#4a3333",
+                      "on-secondary": "#680009",
+                      "inverse-surface": "#fedad8",
+                      "inverse-primary": "#bf0028",
+                      "surface-container-highest": "#462f2e",
+                      "primary-pressed": "#CF0000",
+                      "surface-variant": "#462f2e",
+                      "on-primary-dark": "#0A0A0A",
+                      "inverse-on-surface": "#412b2a",
+                      "on-primary": "#FFFFFF",
+                      "outline": "#3D3D3D",
+                      "on-surface-variant": "#e8bcba",
+                      "secondary-container": "#d7001e",
+                      "primary-fixed": "#ffdad8",
+                      "primary-fixed-dim": "#ffb3b1",
+                      "on-tertiary-fixed": "#001f23",
+                      "primary-bright": "#FF5A6E",
+                      "on-primary-container": "#5b000e",
+                      "on-tertiary-fixed-variant": "#004f56",
+                      "surface-container-low": "#2a1616",
+                      "secondary-fixed": "#ffdad6",
+                      "surface": "#282828",
+                      "on-error-container": "#ffdad6",
+                      "heat-light": "#5C0A1B",
+                      "on-surface-muted": "#A8A8A8",
+                      "surface-container": "#2e1a1a",
+                      "success-bright": "#4FE057",
+                      "on-background": "#fedad8",
+                      "on-secondary-container": "#ffe7e4",
+                      "warning": "#F5A524",
+                      "tertiary-fixed-dim": "#71d5e2",
+                      "success": "#24C02B",
+                      "scrim": "#00000054",
+                      "on-secondary-fixed-variant": "#930011",
+                      "surface-container-lowest": "#1a0909",
+                      "on-tertiary-container": "#002f34",
+                      "heat-full": "#A00A27",
+                      "on-primary-fixed-variant": "#92001c",
+                      "surface-tint": "#ffb3b1",
+                      "surface-dim": "#200e0e",
+                      "heat-none": "#232323"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "2xl": "1rem",
+                      "3xl": "1.5rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "xxl": "32px",
+                      "sm": "8px",
+                      "screen-margin": "20px",
+                      "base": "4px",
+                      "xxxl": "48px",
+                      "md": "12px",
+                      "card-padding": "24px",
+                      "gutter": "12px",
+                      "xs": "4px",
+                      "xl": "24px",
+                      "lg": "16px"
+              },
+              "fontFamily": {
+                      "headline-md": ["Archivo"],
+                      "headline-lg": ["Archivo"],
+                      "body-sm": ["Poppins"],
+                      "label-sm": ["Poppins"],
+                      "metric-sm": ["Roboto Mono"],
+                      "metric-md": ["Roboto Mono"],
+                      "body-md": ["Poppins"],
+                      "headline-sm": ["Archivo"],
+                      "label-md": ["Poppins"],
+                      "label-lg": ["Archivo"],
+                      "title-sm": ["Poppins"],
+                      "title-md": ["Poppins"],
+                      "body-lg": ["Poppins"],
+                      "metric-lg": ["Roboto Mono"]
+              },
+              "fontSize": {
+                      "headline-md": ["26px", {"lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "700"}],
+                      "headline-lg": ["30px", {"lineHeight": "1.15", "letterSpacing": "0.01em", "fontWeight": "700"}],
+                      "body-sm": ["13px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "label-sm": ["10px", {"lineHeight": "1.6", "letterSpacing": "0.15em", "fontWeight": "500"}],
+                      "metric-sm": ["13px", {"lineHeight": "1.2", "fontWeight": "300"}],
+                      "metric-md": ["24px", {"lineHeight": "1.2", "fontWeight": "300"}],
+                      "body-md": ["15px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-sm": ["20px", {"lineHeight": "1.3", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                      "label-md": ["12px", {"lineHeight": "1.33", "letterSpacing": "0.03em", "fontWeight": "500"}],
+                      "label-lg": ["20px", {"lineHeight": "1.1", "letterSpacing": "0.02em", "fontWeight": "700"}],
+                      "title-sm": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.007em", "fontWeight": "500"}],
+                      "title-md": ["18px", {"lineHeight": "1.35", "fontWeight": "600"}],
+                      "body-lg": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "metric-lg": ["56px", {"lineHeight": "1", "letterSpacing": "-0.04em", "fontWeight": "300"}]
+              },
+              backgroundImage: {
+                  'glass': 'linear-gradient(135deg, rgba(61, 61, 61, 0.4) 0%, rgba(40, 40, 40, 0.2) 100%)',
+                  'glass-border': 'linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.0) 100%)',
+                  'btn-gradient': 'linear-gradient(to right, #F50537, #CF0000)',
+              }
+            }
+          }
+        }
+    </script>
+<style>
+    body { 
+        background-color: #141414; 
+        color: #F2F2F2; 
+        background-image: radial-gradient(circle at 50% -20%, rgba(92, 10, 27, 0.15) 0%, rgba(20, 20, 20, 1) 60%);
+        background-attachment: fixed;
+        min-height: max(884px, 100dvh);
+    }
+    
+    /* Glassmorphism utilities */
+    .glass-panel {
+        background: linear-gradient(135deg, rgba(40, 40, 40, 0.7) 0%, rgba(30, 30, 30, 0.4) 100%);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-body-md pb-24 selection:bg-channel-red selection:text-white">
+<!-- TopAppBar -->
+<header class="docked full-width top-0 z-50 pt-4">
+<div class="flex justify-between items-center w-full px-screen-margin py-md">
+<button class="text-on-surface-muted hover:text-primary transition-colors rounded-full p-2 flex items-center justify-center md:hidden">
+<span class="material-symbols-outlined">sensors</span>
+</button>
+<h1 class="text-headline-sm font-headline-sm font-bold text-channel-red tracking-wider">Mito Tracker</h1>
+<!-- Desktop Nav Cluster (Hidden on mobile) -->
+<nav class="hidden md:flex gap-xl items-center absolute left-1/2 -translate-x-1/2">
+<a class="font-label-md text-label-md text-on-surface-muted hover:text-on-surface transition-colors" href="#">Panels</a>
+<a class="font-label-md text-label-md text-on-surface-muted hover:text-on-surface transition-colors" href="#">Control</a>
+<a class="font-label-md text-label-md text-primary flex flex-col items-center after:content-[''] after:w-1 after:h-1 after:bg-primary after:rounded-full after:mt-1" href="#">History</a>
+<a class="font-label-md text-label-md text-on-surface-muted hover:text-on-surface transition-colors" href="#">Stats</a>
+<a class="font-label-md text-label-md text-on-surface-muted hover:text-on-surface transition-colors" href="#">Settings</a>
+</nav>
+<button class="text-on-surface-muted hover:text-primary transition-colors rounded-full p-2 flex items-center justify-center">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-xl pb-xxxl px-screen-margin max-w-2xl mx-auto w-full flex flex-col gap-xl">
+<!-- Header area for context -->
+<div class="mt-md mb-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Log</h1>
+<p class="font-body-md text-body-md text-on-surface-muted">Your recent session history.</p>
+</div>
+<!-- Group: TODAY -->
+<section class="flex flex-col gap-lg">
+<h2 class="font-label-sm text-label-sm text-on-surface-muted uppercase tracking-[0.2em] pl-xs">TODAY</h2>
+<!-- List Item 1 -->
+<div class="glass-panel rounded-3xl p-card-padding flex items-center gap-md relative overflow-hidden group hover:bg-white/5 transition-all cursor-pointer">
+<!-- Instrument Indicator Line -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-channel-red shadow-[0_0_15px_rgba(239,32,44,0.6)]"></div>
+<!-- Time Metric -->
+<div class="flex flex-col items-center justify-center min-w-[70px] pr-md border-r border-white/10 z-10">
+<span class="font-metric-md text-metric-md text-on-surface tracking-widest">15:00</span>
+</div>
+<!-- Details -->
+<div class="flex flex-col flex-grow pl-md z-10">
+<span class="font-title-md text-title-md text-on-surface leading-none mb-1.5">Face</span>
+<div class="flex items-center gap-2.5">
+<div class="flex gap-1.5">
+<span class="w-2 h-2 rounded-full bg-channel-red shadow-[0_0_8px_rgba(239,32,44,0.8)]"></span>
+<span class="w-2 h-2 rounded-full bg-channel-nir shadow-[0_0_8px_rgba(122,90,248,0.8)]"></span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-muted">80% Red/NIR</span>
+</div>
+</div>
+<!-- Trailing Action -->
+<span class="material-symbols-outlined text-on-surface-muted group-hover:text-primary transition-colors z-10">chevron_right</span>
+</div>
+<!-- List Item 2 -->
+<div class="glass-panel rounded-3xl p-card-padding flex items-center gap-md relative overflow-hidden group hover:bg-white/5 transition-all cursor-pointer">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-tertiary shadow-[0_0_15px_rgba(113,213,226,0.6)]"></div>
+<div class="flex flex-col items-center justify-center min-w-[70px] pr-md border-r border-white/10 z-10">
+<span class="font-metric-md text-metric-md text-on-surface tracking-widest">10:00</span>
+</div>
+<div class="flex flex-col flex-grow pl-md z-10">
+<span class="font-title-md text-title-md text-on-surface leading-none mb-1.5">Shoulders</span>
+<div class="flex items-center gap-2.5">
+<span class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_8px_rgba(113,213,226,0.8)]"></span>
+<span class="font-body-sm text-body-sm text-on-surface-muted">Recovery Mode</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-muted group-hover:text-primary transition-colors z-10">chevron_right</span>
+</div>
+</section>
+<!-- Group: YESTERDAY -->
+<section class="flex flex-col gap-lg mt-md">
+<h2 class="font-label-sm text-label-sm text-on-surface-muted uppercase tracking-[0.2em] pl-xs">YESTERDAY</h2>
+<!-- List Item 3 -->
+<div class="glass-panel rounded-3xl p-card-padding flex items-center gap-md relative overflow-hidden group hover:bg-white/5 transition-all cursor-pointer">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-channel-nir shadow-[0_0_15px_rgba(122,90,248,0.6)]"></div>
+<div class="flex flex-col items-center justify-center min-w-[70px] pr-md border-r border-white/10 z-10 opacity-70">
+<span class="font-metric-md text-metric-md text-on-surface tracking-widest">20:00</span>
+</div>
+<div class="flex flex-col flex-grow pl-md z-10 opacity-70">
+<span class="font-title-md text-title-md text-on-surface leading-none mb-1.5">Back</span>
+<div class="flex items-center gap-2.5">
+<span class="w-2 h-2 rounded-full bg-channel-nir shadow-[0_0_8px_rgba(122,90,248,0.8)]"></span>
+<span class="font-body-sm text-body-sm text-on-surface-muted">Deep Tissue (NIR)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-muted group-hover:text-primary transition-colors z-10">chevron_right</span>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="glass-panel fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-8 pt-4 rounded-t-3xl md:hidden border-b-0 border-x-0">
+<a class="flex flex-col items-center justify-center text-on-surface-muted px-3 py-1 hover:text-on-surface transition-colors group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:-translate-y-1 transition-transform">fluorescent</span>
+<span class="text-label-sm font-label-sm opacity-70">Panels</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-muted px-3 py-1 hover:text-on-surface transition-colors group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:-translate-y-1 transition-transform">timer</span>
+<span class="text-label-sm font-label-sm opacity-70">Control</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary px-3 py-1 group" href="#">
+<div class="bg-surface-high/50 p-2 rounded-xl mb-1 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] border border-white/5">
+<span class="material-symbols-outlined">history</span>
+</div>
+<span class="text-label-sm font-label-sm">History</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-muted px-3 py-1 hover:text-on-surface transition-colors group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:-translate-y-1 transition-transform">calendar_month</span>
+<span class="text-label-sm font-label-sm opacity-70">Stats</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-muted px-3 py-1 hover:text-on-surface transition-colors group" href="#">
+<span class="material-symbols-outlined mb-1 group-hover:-translate-y-1 transition-transform">settings</span>
+<span class="text-label-sm font-label-sm opacity-70">Settings</span>
+</a>
+</nav>
+</body></html>

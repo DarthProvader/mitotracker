@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Translation checklist: every new user-facing string belongs here and in values-cs/
+  with the same name. Do not hardcode English in composables, services, or notifications.
+  Leave protocol terms (ML4, ML5, NIR, wavelengths), panel BLE names, and user-entered preset
+  names untranslated.
+-->
+<resources>
+    <string name="app_name">Mito Tracker</string>
+
+    <!-- Tabs (Shell.kt) -->
+    <string name="tab_panels">Panels</string>
+    <string name="tab_control">Control</string>
+    <string name="tab_history">History</string>
+    <string name="tab_stats">Stats</string>
+    <string name="tab_settings">Settings</string>
+
+    <!-- Common actions, shared across several screens -->
+    <string name="action_back">Back</string>
+    <string name="action_dismiss">Dismiss</string>
+    <string name="action_allow">Allow</string>
+    <string name="action_start">Start</string>
+    <string name="action_pause">Pause</string>
+    <string name="action_resume">Resume</string>
+    <string name="action_end_session">End session</string>
+    <string name="action_stop">Stop</string>
+    <string name="action_scan">Scan for panels</string>
+    <string name="action_list_every_device">Nothing found — list every Bluetooth device</string>
+    <string name="action_disconnect">Disconnect</string>
+    <string name="action_forget_panel">Forget this panel</string>
+    <string name="action_new_preset">New preset</string>
+    <string name="action_save_preset">Save preset</string>
+    <string name="action_hide_individual_wavelengths">Hide individual wavelengths</string>
+    <string name="action_individual_wavelengths">Individual wavelengths</string>
+    <string name="action_channels_countdown">Channels &amp; countdown</string>
+    <string name="action_dont_record">Don\'t record it</string>
+    <string name="action_from_now_on">From now on</string>
+    <string name="action_record_against_these">Record it against these</string>
+    <string name="action_turned_around">I turned around</string>
+    <string name="action_say_aimed_at">Say what this is aimed at</string>
+    <string name="action_say_aimed_at_unclaimed">Say what it is aimed at</string>
+    <string name="action_thats_right">That\'s right</string>
+    <string name="action_discard_session">Discard this session</string>
+    <string name="action_delete_session">Delete this session</string>
+    <string name="action_delete_preset">Delete preset</string>
+    <string name="delete_preset_title">Delete this preset?</string>
+    <string name="delete_preset_message">\"%1$s\" will be removed. This cannot be undone.</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_adjust_dose_limits">Adjust dose limits</string>
+
+    <!-- Common statuses -->
+    <string name="status_connecting">Connecting</string>
+    <string name="status_reconnecting">Reconnecting</string>
+    <string name="status_not_connected">Not connected</string>
+    <string name="status_idle">Idle</string>
+    <string name="status_asking">Asking</string>
+    <string name="status_paused">Paused</string>
+    <string name="status_lit">Lit</string>
+    <string name="status_ready">Ready</string>
+    <string name="status_scanning">Scanning</string>
+    <string name="status_connected">Connected</string>
+    <string name="status_over_limit">Over limit</string>
+    <string name="status_nearing_limit">Nearing limit</string>
+    <string name="status_optimal">Optimal</string>
+
+    <!-- Common words and fragments (Words.kt) -->
+    <string name="word_today">Today</string>
+    <string name="word_yesterday">Yesterday</string>
+    <string name="word_red">Red</string>
+    <string name="word_nir">NIR</string>
+    <string name="word_near_infrared">near-infrared</string>
+    <string name="word_hold">hold</string>
+    <string name="word_ambient_light">Ambient light</string>
+    <string name="word_not_counted">not counted</string>
+    <string name="word_no_output">no output</string>
+    <string name="word_areas">Areas</string>
+    <string name="word_channels">Channels</string>
+    <string name="unit_s">s</string>
+    <string name="unit_min">min</string>
+
+    <!-- Shared format strings -->
+    <string name="format_min">%1$d min</string>
+    <string name="format_seconds">%1$d s</string>
+    <string name="format_percent">%1$d %%</string>
+    <string name="format_percent_red">%1$d %% red</string>
+    <string name="format_percent_nir">%1$d %% near-infrared</string>
+    <string name="format_days">%1$d days</string>
+    <string name="format_distance_from_panel">%1$d cm from the panel</string>
+    <string name="a11y_more">More %1$s</string>
+    <string name="a11y_less">Less %1$s</string>
+
+    <!-- ControlScreen.kt -->
+    <string name="control_unclaimed_ambient">Not recorded · ambient</string>
+    <string name="control_eyebrow_paused">Paused with</string>
+    <string name="control_eyebrow_running">Time remaining</string>
+    <string name="control_eyebrow_ready">Countdown set to</string>
+    <string name="control_asking_placeholder">· ·</string>
+    <string name="control_unclaimed_message">This panel was already running when the app reached it.</string>
+    <string name="control_tap_pick_panel">Tap to pick a panel</string>
+    <string name="control_connecting_to">Connecting to %1$s</string>
+    <string name="control_disconnected_tap_pick">Disconnected · tap to pick a panel</string>
+    <string name="control_plan_output">Output</string>
+    <string name="control_plan_will_start_with">Will start with %1$s</string>
+    <string name="control_plan_nothing_to_report">Nothing to report until a panel answers</string>
+
+    <!-- AimScreen.kt -->
+    <string name="aim_title_turning">Turned around</string>
+    <string name="aim_title_target">Target area</string>
+    <string name="aim_subtitle_turning">The minutes so far stay where they are. From now on the light counts against whatever is chosen here.</string>
+    <string name="aim_subtitle_target">What these minutes belong to. More than one area is fine — a panel facing two of them lights both.</string>
+    <string name="aim_until_now_format">Until now · %1$s</string>
+    <string name="aim_empty_turning">With nothing chosen, the rest of the run is ambient light and nobody is credited with it.</string>
+    <string name="aim_empty_target">With no area chosen, the run is recorded as ambient light: the panel was on, and nobody is credited with the minutes.</string>
+    <string name="aim_not_running">The panel is not lit, so this sets what the next run will be credited to.</string>
+    <string name="dose_today_format">%1$s today</string>
+    <string name="dose_of_limit_format">/ %1$d min</string>
+    <string name="dose_minutes_left_format">%1$d min left</string>
+    <string name="dose_over_limit_warning">Already past the %1$d minutes Mito Light recommend for one area in a day.</string>
+
+    <!-- SetupScreen.kt -->
+    <string name="setup_title_new_preset">New preset</string>
+    <string name="setup_title_output">Output</string>
+    <string name="setup_subtitle_new_preset">Save a repeatable session: where the light points, how bright it is, and for how long.</string>
+    <string name="setup_subtitle_output">What the panel will do when it is started. Every change goes straight to it.</string>
+    <string name="tab_manual">Manual</string>
+    <string name="tab_presets">Presets</string>
+    <string name="setup_nothing_connected">Nothing is connected, so there is nothing to set.</string>
+    <string name="setup_zero_holds_light">At zero the panel holds the light on until it is stopped.</string>
+    <string name="setup_your_presets">Your presets</string>
+    <string name="setup_included_routines">Included routines</string>
+    <string name="preset_no_area">No area — the panel as a lamp</string>
+    <string name="preset_dose_today_format">%1$d / %2$d min today</string>
+    <string name="label_preset_name">Preset name</string>
+    <string name="preset_no_area_selected_note">No area selected means ambient light; the session will not count towards dose.</string>
+    <string name="setup_wavelength_mix">Wavelength mix</string>
+    <string name="setup_preset_validation_note">Give the preset a name and leave at least one channel above zero.</string>
+
+    <!-- SessionSummary.kt -->
+    <string name="summary_session_recorded">Session recorded</string>
+    <string name="summary_ran_to_end">ran to the end</string>
+    <string name="summary_of_min_set_format">of %1$d min set</string>
+    <string name="summary_ambient_note">Recorded as ambient light. No area is credited with these minutes.</string>
+    <string name="summary_credited_to_format">Credited to %1$s.</string>
+    <string name="summary_correct_it">Correct it</string>
+
+    <!-- PanelsScreen.kt -->
+    <string name="panels_subtitle">What the app is talking to.</string>
+    <string name="source_bluetooth">Bluetooth</string>
+    <string name="source_simulator">Simulator</string>
+    <string name="panels_none_title">No panel yet</string>
+    <string name="panels_scan_hint">Scan to find one nearby.</string>
+    <string name="panels_advertise_note">A panel only advertises while nothing else is connected to it, so switch Bluetooth on at its touchscreen first. With no panel in the room, the simulator drives every screen in the app.</string>
+    <string name="panels_known">Known panels</string>
+    <string name="panels_advertise_short">A panel only advertises while nothing else is connected to it.</string>
+    <string name="panels_found">Found</string>
+    <string name="panels_channels_tap_reconnect_format">%1$d channels · tap to reconnect</string>
+    <string name="cd_panel_detail">Panel detail</string>
+
+    <!-- PanelDetailScreen.kt -->
+    <string name="detail_not_remembered">This panel is no longer remembered.</string>
+    <string name="fact_address">Address</string>
+    <string name="fact_dims_to">Dims to</string>
+    <string name="fact_last_connected">Last connected</string>
+    <string name="detail_accepts_title">What this panel accepts</string>
+    <string name="detail_ml5_note">A 5.0 drives each of its six wavelengths separately and carries its own light modes on the touchscreen. Those modes live in the hardware and are not presets.</string>
+    <string name="detail_ml4_note">A 4.0 dims all red together and all near-infrared together, and takes a countdown of 1 to 20 minutes.</string>
+
+    <!-- HistoryScreen.kt -->
+    <string name="history_title">Log</string>
+    <string name="history_subtitle_format">%1$d sessions recorded.</string>
+
+    <!-- SessionDetailScreen.kt -->
+    <string name="detail_session_gone">That session is gone.</string>
+    <string name="fact_lit_for">Lit for</string>
+    <string name="label_countdown">Countdown</string>
+    <string name="label_countdown_set_to">Countdown set to</string>
+    <string name="detail_ended_zero">by reaching zero</string>
+    <string name="detail_ended_early">stopped early</string>
+    <string name="fact_ended">Ended</string>
+    <string name="fact_panel">Panel</string>
+    <string name="detail_ambient_note">The panel was on and no area is credited with the minutes, so this session counts towards no dose and no streak.</string>
+    <string name="detail_exposures">Exposures</string>
+
+    <!-- StatsScreen.kt -->
+    <string name="stats_title">Analytics</string>
+    <string name="stats_subtitle">Whether it is actually happening, and to whom.</string>
+    <string name="stats_consistency">Consistency</string>
+    <string name="stats_day_in_a_row">DAY\nIN A ROW</string>
+    <string name="stats_days_in_a_row">DAYS\nIN A ROW</string>
+    <string name="stats_longest_run">Longest run</string>
+    <string name="stats_ambient_note">Ambient runs do not count. A streak that could be kept alive by lighting a room would be worth nothing.</string>
+    <string name="stats_exposure_map">Exposure map</string>
+    <string name="stats_heat_low">LOW</string>
+    <string name="stats_heat_max">MAX</string>
+    <string name="stats_total_sessions">Total sessions</string>
+    <string name="stats_dose_per_area">Dose per area</string>
+    <string name="stats_nothing_recorded">Nothing recorded in the last thirty days.</string>
+    <string name="stats_min_per_30_days">min / 30 days</string>
+    <string name="stats_month_minutes_format">%1$d min in the last thirty days</string>
+    <string name="stats_weekday_mon">M</string>
+    <string name="stats_weekday_tue">T</string>
+    <string name="stats_weekday_wed">W</string>
+    <string name="stats_weekday_thu">T</string>
+    <string name="stats_weekday_fri">F</string>
+    <string name="stats_weekday_sat">S</string>
+    <string name="stats_weekday_sun">S</string>
+
+    <!-- SettingsScreen.kt -->
+    <string name="settings_subtitle">Every borrowed number says where it came from.</string>
+    <string name="settings_panel">Panel</string>
+    <string name="fact_remembered_panels">Remembered panels</string>
+    <string name="settings_simulator_note">The simulator drives a panel that only exists in memory, so the app can be shown and tested without hardware in the room.</string>
+    <string name="settings_reconnect_label">Reconnect when in range</string>
+    <string name="settings_reconnect_explanation">A remembered panel is reached from its stored address, with no scan.</string>
+    <string name="settings_keep_control_label">Keep control while the screen is off</string>
+    <string name="settings_keep_control_explanation">A ten minute exposure is exactly when a phone gets locked. This keeps a notification on screen so Android does not reclaim the connection halfway through.</string>
+    <string name="settings_exposure">Exposure</string>
+    <string name="settings_manual_title">Mito Light\'s manual</string>
+    <string name="settings_manual_note">10 to 20 minutes per area per day, an area lit once or twice, and no more than 30 minutes in total if the same area is lit twice. These are their numbers, not ours, which is why they are the defaults.</string>
+    <string name="fact_daily_limit">Daily limit per area</string>
+    <string name="fact_ceiling">Ceiling when lit twice</string>
+    <string name="fact_warn_at">Warn at</string>
+    <string name="settings_warn_at_format">%1$d %% of the limit</string>
+    <string name="settings_default_countdown">Default countdown</string>
+    <string name="settings_panel_accepts_note">The panel itself accepts 1 to 20 minutes.</string>
+    <string name="settings_ask_area_label">Ask which area before starting</string>
+    <string name="settings_ask_area_explanation">Turn this off and a run is recorded as ambient light: the panel was on, and no area is credited with the minutes.</string>
+    <string name="settings_warn_near_limit_label">Warn near the limit</string>
+    <string name="settings_warn_near_limit_explanation">Amber is the only colour allowed to contradict you, and only on the authority of the manual.</string>
+    <string name="settings_areas_presets">Areas and presets</string>
+    <string name="settings_areas_fixed_format">%1$d, fixed</string>
+    <string name="fact_default_presets">Default presets</string>
+    <string name="settings_areas_no_overlap_note">Areas do not overlap, which is the only reason minutes can be added up without counting the same light twice.</string>
+    <string name="fact_sessions">Sessions</string>
+    <string name="fact_unattributed">Unattributed</string>
+    <string name="settings_seeded_note">Seeded with generated history so the statistics have something to show before a real session exists. Real sessions land in the same list.</string>
+    <string name="settings_health">Health</string>
+    <string name="settings_read_health_label">Read sleep and heart rate</string>
+    <string name="settings_read_health_explanation">Sleep, heart rate variability and resting heart rate can be read from Health Connect and shown beside this history. Nothing is written back: Health Connect has no light therapy type, and filing sessions as workouts would inflate your exercise totals.</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_notify_end_label">When a session ends</string>
+    <string name="settings_notify_drop_label">If the link drops mid-session</string>
+    <string name="settings_notify_drop_explanation">The panel keeps counting down without us, so a dropped link is not a stop.</string>
+    <string name="settings_about">About</string>
+    <string name="fact_version">Version</string>
+    <string name="settings_version_value">0.2 prototype</string>
+    <string name="fact_protocol">Protocol</string>
+    <string name="settings_protocol_value">reverse engineered</string>
+    <string name="settings_about_note">Built from Mito Light\'s own colours, typography and manual. Not affiliated with Mito Light.</string>
+
+    <!-- SettingsScreen.kt — Language section -->
+    <string name="settings_language">Language</string>
+    <string name="settings_language_title">App language</string>
+    <string name="settings_language_explanation">Choose the language for this app\'s own screens. This does not change your phone\'s system language.</string>
+    <string name="language_system">System default</string>
+    <string name="language_english">English</string>
+    <string name="language_czech">Čeština</string>
+
+    <!-- Permissions.kt -->
+    <string name="permission_bluetooth_needed">Bluetooth permission is needed to find the panel.</string>
+    <string name="permission_simulator_note">The simulator works without it, if you only want to look around.</string>
+
+    <!-- PanelService.kt — notification channel and status templates -->
+    <string name="notif_channel_name">Panel in use</string>
+    <string name="notif_channel_description">Shown while the app is connected to a panel.</string>
+    <string name="notif_lit_remaining">Lit — %1$s left</string>
+    <string name="notif_idle_set_to">Idle, set to %1$d min</string>
+
+    <!-- Areas (domain/Area.kt) — twelve fixed body areas -->
+    <string name="area_scalp">Scalp</string>
+    <string name="area_face_and_neck">Face &amp; neck</string>
+    <string name="area_shoulders">Shoulders</string>
+    <string name="area_chest">Chest</string>
+    <string name="area_abdomen">Abdomen</string>
+    <string name="area_upper_back">Upper back</string>
+    <string name="area_lower_back">Lower back</string>
+    <string name="area_arms">Arms</string>
+    <string name="area_hips">Hips</string>
+    <string name="area_thighs">Thighs</string>
+    <string name="area_knees">Knees</string>
+    <string name="area_feet">Feet</string>
+
+    <!-- Default presets (domain/Preset.kt) — keyed by stable id, not by name -->
+    <string name="preset_sleep">Sleep</string>
+    <string name="preset_joint_support">Joint support</string>
+    <string name="preset_brain_cognition">Brain &amp; cognition</string>
+    <string name="preset_beauty_skin">Beauty &amp; skin</string>
+    <string name="preset_recovery">Recovery</string>
+    <string name="preset_vision">Vision</string>
+    <string name="preset_musculoskeletal_support">Musculoskeletal support</string>
+    <string name="preset_feeling_under_the_weather">Feeling under the weather</string>
+    <string name="preset_inflammation_support">Inflammation support</string>
+    <string name="preset_mood_wellbeing">Mood &amp; mental wellbeing</string>
+
+    <!-- Error fallbacks (PanelViewModel.kt, SessionTracker.kt) -->
+    <string name="error_scan_failed">the scan could not be started</string>
+    <string name="error_panel_refused">the panel refused that</string>
+    <string name="fallback_unknown_panel">unknown panel</string>
+    <string name="fallback_unknown">unknown</string>
+</resources>

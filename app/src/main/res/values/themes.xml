@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Cold start: SplashScreen API keeps this theme until the first frame is ready, then
+      switches to Theme.MitoTracker via postSplashScreenTheme.
+    -->
+    <style name="Theme.MitoTracker.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
+        <item name="windowSplashScreenAnimationDuration">200</item>
+        <item name="postSplashScreenTheme">@style/Theme.MitoTracker</item>
+        <item name="android:statusBarColor">@color/splash_background</item>
+        <item name="android:navigationBarColor">@color/splash_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!-- AppCompat parent so AppCompatDelegate.setApplicationLocales recreates the activity. -->
+    <style name="Theme.MitoTracker" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:statusBarColor">@color/window_background</item>
+        <item name="android:navigationBarColor">@color/window_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

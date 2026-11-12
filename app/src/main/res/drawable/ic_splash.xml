@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Splash mark kept inside the circular 2/3 safe zone of the 240 dp splash slot. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="240dp"
+    android:height="240dp"
+    android:viewportWidth="240"
+    android:viewportHeight="240">
+
+    <path
+        android:fillColor="#40F50537"
+        android:pathData="M120,120m-70,0a70,70 0,1 1,140 0a70,70 0,1 1,-140 0" />
+
+    <path
+        android:fillColor="#1A0909"
+        android:pathData="M88,58h64c8.8,0 16,7.2 16,16v92c0,8.8 -7.2,16 -16,16h-64c-8.8,0 -16,-7.2 -16,-16v-92c0,-8.8 7.2,-16 16,-16z" />
+
+    <path
+        android:fillColor="#F50537"
+        android:pathData="M96,72h12c2.2,0 4,1.8 4,4v88c0,2.2 -1.8,4 -4,4h-12c-2.2,0 -4,-1.8 -4,-4v-88c0,-2.2 1.8,-4 4,-4z" />
+    <path
+        android:fillColor="#FF5A6E"
+        android:pathData="M114,72h12c2.2,0 4,1.8 4,4v88c0,2.2 -1.8,4 -4,4h-12c-2.2,0 -4,-1.8 -4,-4v-88c0,-2.2 1.8,-4 4,-4z" />
+    <path
+        android:fillColor="#F50537"
+        android:pathData="M132,72h12c2.2,0 4,1.8 4,4v88c0,2.2 -1.8,4 -4,4h-12c-2.2,0 -4,-1.8 -4,-4v-88c0,-2.2 1.8,-4 4,-4z" />
+</vector>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mito Tracker</string>
+
+    <!-- Tabs (Shell.kt) -->
+    <string name="tab_panels">Panely</string>
+    <string name="tab_control">Ovládání</string>
+    <string name="tab_history">Historie</string>
+    <string name="tab_stats">Statistiky</string>
+    <string name="tab_settings">Nastavení</string>
+
+    <!-- Common actions, shared across several screens -->
+    <string name="action_back">Zpět</string>
+    <string name="action_dismiss">Zavřít</string>
+    <string name="action_allow">Povolit</string>
+    <string name="action_start">Spustit</string>
+    <string name="action_pause">Pauza</string>
+    <string name="action_resume">Pokračovat</string>
+    <string name="action_end_session">Ukončit relaci</string>
+    <string name="action_stop">Zastavit</string>
+    <string name="action_scan">Vyhledat panely</string>
+    <string name="action_list_every_device">Nic nenalezeno — zobrazit všechna Bluetooth zařízení</string>
+    <string name="action_disconnect">Odpojit</string>
+    <string name="action_forget_panel">Zapomenout tento panel</string>
+    <string name="action_new_preset">Nová předvolba</string>
+    <string name="action_save_preset">Uložit předvolbu</string>
+    <string name="action_hide_individual_wavelengths">Skrýt jednotlivé vlnové délky</string>
+    <string name="action_individual_wavelengths">Jednotlivé vlnové délky</string>
+    <string name="action_channels_countdown">Kanály a časovač</string>
+    <string name="action_dont_record">Nezaznamenávat</string>
+    <string name="action_from_now_on">Od teď</string>
+    <string name="action_record_against_these">Zaznamenat pro tyto oblasti</string>
+    <string name="action_turned_around">Otočil(a) jsem se</string>
+    <string name="action_say_aimed_at">Uveďte, na co je to zaměřeno</string>
+    <string name="action_say_aimed_at_unclaimed">Uveďte, na co je zaměřeno</string>
+    <string name="action_thats_right">Souhlasí</string>
+    <string name="action_discard_session">Zahodit tuto relaci</string>
+    <string name="action_delete_session">Odstranit tuto relaci</string>
+    <string name="action_delete_preset">Smazat předvolbu</string>
+    <string name="delete_preset_title">Smazat tuto předvolbu?</string>
+    <string name="delete_preset_message">„%1$s“ bude odstraněna. Tuto akci nelze vrátit.</string>
+    <string name="action_cancel">Zrušit</string>
+    <string name="action_adjust_dose_limits">Upravit limity dávky</string>
+
+    <!-- Common statuses -->
+    <string name="status_connecting">Připojování</string>
+    <string name="status_reconnecting">Znovu se připojuje</string>
+    <string name="status_not_connected">Nepřipojeno</string>
+    <string name="status_idle">Nečinné</string>
+    <string name="status_asking">Zjišťuje se</string>
+    <string name="status_paused">Pauza</string>
+    <string name="status_lit">Svítí</string>
+    <string name="status_ready">Připraveno</string>
+    <string name="status_scanning">Vyhledávání</string>
+    <string name="status_connected">Připojeno</string>
+    <string name="status_over_limit">Nad limitem</string>
+    <string name="status_nearing_limit">Blíží se limitu</string>
+    <string name="status_optimal">Optimální</string>
+
+    <!-- Common words and fragments (Words.kt) -->
+    <string name="word_today">Dnes</string>
+    <string name="word_yesterday">Včera</string>
+    <string name="word_red">Červená</string>
+    <string name="word_nir">NIR</string>
+    <string name="word_near_infrared">NIR</string>
+    <string name="word_hold">bez limitu</string>
+    <string name="word_ambient_light">Okolní světlo</string>
+    <string name="word_not_counted">nezapočítáno</string>
+    <string name="word_no_output">bez výstupu</string>
+    <string name="word_areas">Oblasti</string>
+    <string name="word_channels">Kanály</string>
+    <string name="unit_s">s</string>
+    <string name="unit_min">min</string>
+
+    <!-- Shared format strings -->
+    <string name="format_min">%1$d min</string>
+    <string name="format_seconds">%1$d s</string>
+    <string name="format_percent">%1$d %%</string>
+    <string name="format_percent_red">%1$d %% červená</string>
+    <string name="format_percent_nir">%1$d %% NIR</string>
+    <string name="format_days">%1$d dní</string>
+    <string name="format_distance_from_panel">%1$d cm od panelu</string>
+    <string name="a11y_more">Více %1$s</string>
+    <string name="a11y_less">Méně %1$s</string>
+
+    <!-- ControlScreen.kt -->
+    <string name="control_unclaimed_ambient">Nezaznamenáno · okolní světlo</string>
+    <string name="control_eyebrow_paused">Pozastaveno na</string>
+    <string name="control_eyebrow_running">Zbývající čas</string>
+    <string name="control_eyebrow_ready">Časovač nastaven na</string>
+    <string name="control_asking_placeholder">· ·</string>
+    <string name="control_unclaimed_message">Tento panel už běžel, když se k němu aplikace připojila.</string>
+    <string name="control_tap_pick_panel">Klepnutím vyberte panel</string>
+    <string name="control_connecting_to">Připojování k %1$s</string>
+    <string name="control_disconnected_tap_pick">Odpojeno · klepnutím vyberte panel</string>
+    <string name="control_plan_output">Výstup</string>
+    <string name="control_plan_will_start_with">Spustí se s předvolbou %1$s</string>
+    <string name="control_plan_nothing_to_report">Není co zobrazit, dokud panel neodpoví</string>
+
+    <!-- AimScreen.kt -->
+    <string name="aim_title_turning">Otočení</string>
+    <string name="aim_title_target">Cílová oblast</string>
+    <string name="aim_subtitle_turning">Minuty strávené dosud zůstávají tam, kde jsou. Od teď se světlo počítá tomu, co je zde vybráno.</string>
+    <string name="aim_subtitle_target">Čemu tyto minuty patří. Lze vybrat i více oblastí — panel namířený na dvě z nich rozsvítí obě.</string>
+    <string name="aim_until_now_format">Doposud · %1$s</string>
+    <string name="aim_empty_turning">Pokud nic nevyberete, zbytek relace je okolní světlo a nikomu se nezapočítá.</string>
+    <string name="aim_empty_target">Pokud nevyberete žádnou oblast, relace se zaznamená jako okolní světlo: panel svítil, ale minuty se nikomu nezapočítají.</string>
+    <string name="aim_not_running">Panel nesvítí, takže tímto se nastavuje, čemu se započítá další relace.</string>
+    <string name="dose_today_format">%1$s dnes</string>
+    <string name="dose_of_limit_format">/ %1$d min</string>
+    <string name="dose_minutes_left_format">zbývá %1$d min</string>
+    <string name="dose_over_limit_warning">Již překročeno %1$d minut, které Mito Light doporučuje pro jednu oblast za den.</string>
+
+    <!-- SetupScreen.kt -->
+    <string name="setup_title_new_preset">Nová předvolba</string>
+    <string name="setup_title_output">Výstup</string>
+    <string name="setup_subtitle_new_preset">Uložte opakovatelnou relaci: kam světlo směřuje, jak je jasné a jak dlouho trvá.</string>
+    <string name="setup_subtitle_output">Co panel udělá po spuštění. Každá změna se odešle přímo do panelu.</string>
+    <string name="tab_manual">Ruční</string>
+    <string name="tab_presets">Předvolby</string>
+    <string name="setup_nothing_connected">Nic není připojeno, takže není co nastavovat.</string>
+    <string name="setup_zero_holds_light">Při nule panel udržuje světlo zapnuté, dokud se nezastaví.</string>
+    <string name="setup_your_presets">Vaše předvolby</string>
+    <string name="setup_included_routines">Zahrnuté rutiny</string>
+    <string name="preset_no_area">Žádná oblast — panel jako lampa</string>
+    <string name="preset_dose_today_format">%1$d z %2$d min dnes</string>
+    <string name="label_preset_name">Název předvolby</string>
+    <string name="preset_no_area_selected_note">Bez vybrané oblasti se relace počítá jako okolní světlo a nezapočítá se do dávky.</string>
+    <string name="setup_wavelength_mix">Mix vlnových délek</string>
+    <string name="setup_preset_validation_note">Zadejte název předvolby a nechte alespoň jeden kanál nad nulou.</string>
+
+    <!-- SessionSummary.kt -->
+    <string name="summary_session_recorded">Relace zaznamenána</string>
+    <string name="summary_ran_to_end">doběhla do konce</string>
+    <string name="summary_of_min_set_format">z nastavených %1$d min</string>
+    <string name="summary_ambient_note">Zaznamenáno jako okolní světlo. Těmto minutám není přiřazena žádná oblast.</string>
+    <string name="summary_credited_to_format">Započítáno oblasti %1$s.</string>
+    <string name="summary_correct_it">Opravit</string>
+
+    <!-- PanelsScreen.kt -->
+    <string name="panels_subtitle">S čím aplikace komunikuje.</string>
+    <string name="source_bluetooth">Bluetooth</string>
+    <string name="source_simulator">Simulátor</string>
+    <string name="panels_none_title">Zatím žádný panel</string>
+    <string name="panels_scan_hint">Vyhledejte panel v okolí.</string>
+    <string name="panels_advertise_note">Panel se vysílá pouze tehdy, když k němu není nic jiného připojeno, takže nejprve na jeho dotykové obrazovce zapněte Bluetooth. Když v místnosti není žádný panel, všechny obrazovky aplikace řídí simulátor.</string>
+    <string name="panels_known">Známé panely</string>
+    <string name="panels_advertise_short">Panel se vysílá pouze tehdy, když k němu není nic jiného připojeno.</string>
+    <string name="panels_found">Nalezeno</string>
+    <string name="panels_channels_tap_reconnect_format">%1$d kanály · klepnutím se znovu připojíte</string>
+    <string name="cd_panel_detail">Detail panelu</string>
+
+    <!-- PanelDetailScreen.kt -->
+    <string name="detail_not_remembered">Tento panel si aplikace už nepamatuje.</string>
+    <string name="fact_address">Adresa</string>
+    <string name="fact_dims_to">Ztlumí až na</string>
+    <string name="fact_last_connected">Poslední připojení</string>
+    <string name="detail_accepts_title">Co tento panel přijímá</string>
+    <string name="detail_ml5_note">5.0 řídí každou ze svých šesti vlnových délek samostatně a má vlastní světelné režimy na dotykové obrazovce. Tyto režimy patří hardwaru a nejsou to předvolby.</string>
+    <string name="detail_ml4_note">4.0 ztlumuje všechnu červenou společně a všechnu NIR společně a přijímá časovač 1 až 20 minut.</string>
+
+    <!-- HistoryScreen.kt -->
+    <string name="history_title">Deník</string>
+    <string name="history_subtitle_format">%1$d zaznamenaných relací.</string>
+
+    <!-- SessionDetailScreen.kt -->
+    <string name="detail_session_gone">Tato relace už neexistuje.</string>
+    <string name="fact_lit_for">Svítilo po</string>
+    <string name="label_countdown">Časovač</string>
+    <string name="label_countdown_set_to">Časovač nastaven na</string>
+    <string name="detail_ended_zero">dosažením nuly</string>
+    <string name="detail_ended_early">zastaveno předčasně</string>
+    <string name="fact_ended">Konec</string>
+    <string name="fact_panel">Panel</string>
+    <string name="detail_ambient_note">Panel svítil a žádné oblasti se minuty nezapočítávají, takže tato relace se nezapočítává do žádné dávky ani řady.</string>
+    <string name="detail_exposures">Expozice</string>
+
+    <!-- StatsScreen.kt -->
+    <string name="stats_title">Analýzy</string>
+    <string name="stats_subtitle">Zda k tomu skutečně dochází, a u koho.</string>
+    <string name="stats_consistency">Pravidelnost</string>
+    <string name="stats_day_in_a_row">DEN\nV ŘADĚ</string>
+    <string name="stats_days_in_a_row">DNY\nV ŘADĚ</string>
+    <string name="stats_longest_run">Nejdelší řada</string>
+    <string name="stats_ambient_note">Relace s okolním světlem se nezapočítávají. Řada udržovaná pouhým osvětlením místnosti by nebyla k ničemu.</string>
+    <string name="stats_exposure_map">Mapa expozic</string>
+    <string name="stats_heat_low">MÁLO</string>
+    <string name="stats_heat_max">MAX</string>
+    <string name="stats_total_sessions">Celkem relací</string>
+    <string name="stats_dose_per_area">Dávka podle oblasti</string>
+    <string name="stats_nothing_recorded">Za posledních třicet dní nic nezaznamenáno.</string>
+    <string name="stats_min_per_30_days">min / 30 dní</string>
+    <string name="stats_month_minutes_format">%1$d min za posledních třicet dní</string>
+    <string name="stats_weekday_mon">P</string>
+    <string name="stats_weekday_tue">Ú</string>
+    <string name="stats_weekday_wed">S</string>
+    <string name="stats_weekday_thu">Č</string>
+    <string name="stats_weekday_fri">P</string>
+    <string name="stats_weekday_sat">S</string>
+    <string name="stats_weekday_sun">N</string>
+
+    <!-- SettingsScreen.kt -->
+    <string name="settings_subtitle">Každé převzaté číslo říká, odkud pochází.</string>
+    <string name="settings_panel">Panel</string>
+    <string name="fact_remembered_panels">Zapamatované panely</string>
+    <string name="settings_simulator_note">Simulátor řídí panel, který existuje jen v paměti, takže lze aplikaci předvádět a testovat i bez hardwaru v místnosti.</string>
+    <string name="settings_reconnect_label">Znovu se připojit v dosahu</string>
+    <string name="settings_reconnect_explanation">Zapamatovaný panel se dosáhne podle uložené adresy, bez vyhledávání.</string>
+    <string name="settings_keep_control_label">Udržet ovládání i při vypnuté obrazovce</string>
+    <string name="settings_keep_control_explanation">Desetiminutová expozice je přesně ta doba, kdy se telefon zamkne. Toto udržuje na obrazovce oznámení, aby Android neukončil připojení v polovině relace.</string>
+    <string name="settings_exposure">Expozice</string>
+    <string name="settings_manual_title">Manuál Mito Light</string>
+    <string name="settings_manual_note">10 až 20 minut na oblast za den, oblast osvětlená jednou nebo dvakrát a nejvýše 30 minut celkem, pokud je stejná oblast osvětlena dvakrát. Jsou to jejich čísla, ne naše, a proto jsou výchozí.</string>
+    <string name="fact_daily_limit">Denní limit na oblast</string>
+    <string name="fact_ceiling">Strop při dvojím osvícení</string>
+    <string name="fact_warn_at">Varovat při</string>
+    <string name="settings_warn_at_format">%1$d %% limitu</string>
+    <string name="settings_default_countdown">Výchozí časovač</string>
+    <string name="settings_panel_accepts_note">Samotný panel přijímá 1 až 20 minut.</string>
+    <string name="settings_ask_area_label">Zeptat se na oblast před spuštěním</string>
+    <string name="settings_ask_area_explanation">Vypněte to a relace se zaznamená jako okolní světlo: panel svítil, ale žádné oblasti se minuty nezapočítají.</string>
+    <string name="settings_warn_near_limit_label">Varovat blízko limitu</string>
+    <string name="settings_warn_near_limit_explanation">Oranžová je jediná barva, která vám může odporovat, a jen na základě manuálu.</string>
+    <string name="settings_areas_presets">Oblasti a předvolby</string>
+    <string name="settings_areas_fixed_format">%1$d, pevně stanoveno</string>
+    <string name="fact_default_presets">Výchozí předvolby</string>
+    <string name="settings_areas_no_overlap_note">Oblasti se nepřekrývají, což je jediný důvod, proč lze minuty sčítat, aniž by se stejné světlo počítalo dvakrát.</string>
+    <string name="fact_sessions">Relace</string>
+    <string name="fact_unattributed">Nepřiřazeno</string>
+    <string name="settings_seeded_note">Naplněno vygenerovanou historií, aby statistiky měly co zobrazit ještě před první skutečnou relací. Skutečné relace se řadí do stejného seznamu.</string>
+    <string name="settings_health">Zdraví</string>
+    <string name="settings_read_health_label">Číst spánek a srdeční tep</string>
+    <string name="settings_read_health_explanation">Spánek, variabilitu srdečního tepu a klidový tep lze číst z Health Connect a zobrazovat je vedle této historie. Nic se nezapisuje zpět: Health Connect nemá typ pro světelnou terapii a zaznamenávat relace jako cvičení by zkreslovalo vaše sportovní statistiky.</string>
+    <string name="settings_notifications">Oznámení</string>
+    <string name="settings_notify_end_label">Když relace skončí</string>
+    <string name="settings_notify_drop_label">Když se spojení přeruší uprostřed relace</string>
+    <string name="settings_notify_drop_explanation">Panel počítá čas dál i bez nás, takže přerušené spojení není zastavení.</string>
+    <string name="settings_about">O aplikaci</string>
+    <string name="fact_version">Verze</string>
+    <string name="settings_version_value">0.2 prototyp</string>
+    <string name="fact_protocol">Protokol</string>
+    <string name="settings_protocol_value">reverzně vyvinutý</string>
+    <string name="settings_about_note">Vytvořeno z vlastních barev, typografie a manuálu Mito Light. Nesouvisí s Mito Light.</string>
+
+    <!-- SettingsScreen.kt — Language section -->
+    <string name="settings_language">Jazyk</string>
+    <string name="settings_language_title">Jazyk aplikace</string>
+    <string name="settings_language_explanation">Vyberte jazyk pro obrazovky této aplikace. Systémový jazyk telefonu se tím nezmění.</string>
+    <string name="language_system">Výchozí podle systému</string>
+    <string name="language_english">English</string>
+    <string name="language_czech">Čeština</string>
+
+    <!-- Permissions.kt -->
+    <string name="permission_bluetooth_needed">K vyhledání panelu je potřeba oprávnění Bluetooth.</string>
+    <string name="permission_simulator_note">Simulátor funguje i bez něj, pokud si chcete jen prohlédnout aplikaci.</string>
+
+    <!-- PanelService.kt — notification channel and status templates -->
+    <string name="notif_channel_name">Panel je používán</string>
+    <string name="notif_channel_description">Zobrazeno, když je aplikace připojena k panelu.</string>
+    <string name="notif_lit_remaining">Svítí — zbývá %1$s</string>
+    <string name="notif_idle_set_to">Nečinné, nastaveno na %1$d min</string>
+
+    <!-- Areas (domain/Area.kt) — twelve fixed body areas -->
+    <string name="area_scalp">Pokožka hlavy</string>
+    <string name="area_face_and_neck">Obličej a krk</string>
+    <string name="area_shoulders">Ramena</string>
+    <string name="area_chest">Hrudník</string>
+    <string name="area_abdomen">Břicho</string>
+    <string name="area_upper_back">Horní záda</string>
+    <string name="area_lower_back">Dolní záda</string>
+    <string name="area_arms">Paže</string>
+    <string name="area_hips">Boky</string>
+    <string name="area_thighs">Stehna</string>
+    <string name="area_knees">Kolena</string>
+    <string name="area_feet">Chodidla</string>
+
+    <!-- Default presets (domain/Preset.kt) — keyed by stable id, not by name -->
+    <string name="preset_sleep">Spánek</string>
+    <string name="preset_joint_support">Podpora kloubů</string>
+    <string name="preset_brain_cognition">Mozek a kognice</string>
+    <string name="preset_beauty_skin">Krása a pokožka</string>
+    <string name="preset_recovery">Regenerace</string>
+    <string name="preset_vision">Zrak</string>
+    <string name="preset_musculoskeletal_support">Podpora pohybového aparátu</string>
+    <string name="preset_feeling_under_the_weather">Když se necítíte dobře</string>
+    <string name="preset_inflammation_support">Podpora při zánětu</string>
+    <string name="preset_mood_wellbeing">Nálada a duševní pohoda</string>
+
+    <!-- Error fallbacks (PanelViewModel.kt, SessionTracker.kt) -->
+    <string name="error_scan_failed">vyhledávání se nepodařilo spustit</string>
+    <string name="error_panel_refused">panel to odmítl</string>
+    <string name="fallback_unknown_panel">neznámý panel</string>
+    <string name="fallback_unknown">neznámé</string>
+</resources>
